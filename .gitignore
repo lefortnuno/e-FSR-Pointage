@@ -1,0 +1,8 @@
+# igonre tout les node_modules
+**/node_modules/
+
+# Ignore specific directories 
+# /boaS/uploads/
+**/.env
+**/build/
+**/power.bat

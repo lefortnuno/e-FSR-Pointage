@@ -1,0 +1,42 @@
+/* Container styling for input field */
+.input-field {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  text-align: center;
+}
+
+.input-field input:focus {
+  border-color: #007bff;  
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input-field input::placeholder {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* Small text for error messages */
+.text-danger {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 576px) {
+  .input-field input {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+}

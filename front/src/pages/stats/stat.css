@@ -1,0 +1,107 @@
+.table thead tr th,
+.table tbody tr td {
+  color: var(--maintyTsara);
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+.table {
+  border-collapse: inherit;
+}
+
+.table thead th {
+  padding: 0.75rem 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  border-bottom: 1px solid #e3e3e7;
+  font-weight: bold;
+}
+
+.table th {
+  font-weight: 600;
+}
+.table tbody tr td {
+  vertical-align: middle;
+}
+.table td .progress {
+  height: 3px;
+  width: 120px;
+  margin: 0;
+}
+
+.table td,
+.table th {
+  white-space: nowrap;
+}
+
+.table.align-items-center td,
+.table.align-items-center th {
+  vertical-align: middle;
+}
+
+.table tbody tr:last-child td {
+  border-width: 0;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: #e3e3e7;
+}
+
+.timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flatpickr-time:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.callToAction {
+  background-color: var(--alt-color);
+  text-align: center;
+  border-radius: 5px;
+  color: var(--primary-color);
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.callToAction:hover {
+  background-color: var(--text-light);
+  color: var(--white);
+}
+
+.pointageStatu {
+  background-color: var(--alt-color);
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.pointageStatu:hover {
+  background-color: var(--text-light);
+  /* color: var(--white); */
+}
+.pointageStatu.tonga {
+  color: var(--tonga);
+}
+.pointageStatu.tsyTonga {
+  color: var(--tsyTonga);
+}
+.button-pdf{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+}

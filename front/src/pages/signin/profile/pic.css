@@ -1,0 +1,50 @@
+.upload-box {
+  border: 2px dashed var(--primary-color);
+}
+
+.upload-box:hover {
+  border-color: var(--primary-color-hover);
+}
+
+.placeholder {
+  color: var(--primary-color);
+}
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+.input-file {
+  display: none;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--maintyTsara);
+}
+.textProfile{
+  font-size: 1.5rem;
+  color: var(--maintyTsara);
+}
+.uploaded-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+}

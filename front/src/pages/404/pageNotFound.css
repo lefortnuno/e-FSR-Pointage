@@ -1,0 +1,10 @@
+ 
+.wrapper_404 {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-image: url("../../assets/images/page404.svg");
+
+  background-repeat: no-repeat;
+  background-size: contain;
+}

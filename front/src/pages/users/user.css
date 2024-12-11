@@ -1,0 +1,19 @@
+.cardUser {
+  background-color: rgb(40, 40, 40); 
+}
+
+.icon-custom {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid;
+  text-align: center;
+}
+
+.icon-custom.green {
+  border-color: green;
+}
+
+.icon-custom.red {
+  border-color: red;
+}

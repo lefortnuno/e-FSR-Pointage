@@ -1,0 +1,66 @@
+:root {
+  --logo-background: url('../../assets/images/logoBOA.png');  
+}
+
+.sidenav-header {
+  background-image: var(--logo-background);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 100%; 
+}
+
+
+.nySidebar-ko {
+  min-height: 350px;
+}
+.customNavLink {
+display: flex;
+align-items: center;
+color: #ffffff;
+padding: 10px 15px;
+font-weight: bold;
+text-decoration: none;
+/* background: transparent;
+  box-shadow: 0 0px 0px transparent; */
+transition: all 0.75s ease-in-out;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.customNavLink.atato {
+background: linear-gradient(90deg, #4ad167 0%, #57a76a 100%);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.customNavLink:hover {
+  background: linear-gradient(90deg, #21ce46 0%, #18a037 100%);
+  }
+.customNavLink.atato:hover {
+background: linear-gradient(90deg, #21ce46 0%, #18a037 100%);
+}
+
+.navIcone {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(215, 215, 215);
+border-radius: 8px;
+width: 30px;
+height: 30px;
+color: #000;
+font-size: 16px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
+margin-right: 8px;
+}
+
+.navText {
+color: black;
+font-size: 14px;
+margin-left: 8%;
+font-weight: 500;
+}
+.docs-aide {
+cursor: pointer;
+}

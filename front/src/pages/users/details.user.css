@@ -1,0 +1,54 @@
+.page-header {
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: 50%;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: nowrap; /* Maintient l'alignement horizontal */
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column; /* Par défaut colonne pour les petits écrans */
+  align-items: center;
+  z-index: 1;
+}
+
+.profile-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--white);
+}
+
+.qrCodeSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    flex-direction: row; /* Aligne en ligne pour les écrans moyens et grands */
+    justify-content: space-between;
+  }
+
+  .profile-container {
+    flex-direction: row; /* Aligne image et info en ligne */
+    align-items: center;
+  }
+
+  .profile-info {
+    text-align: left; /* Texte aligné à gauche */
+  }
+
+  .profile-img {
+    margin-right: 16px; /* Espace entre l'image et les infos */
+  }
+}

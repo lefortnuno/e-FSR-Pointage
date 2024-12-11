@@ -1,0 +1,40 @@
+/* Styles de base pour le footer */
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Styles pour les boutons */
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  width: 35%; /* Assure un bon espacement des boutons */
+  font-size: 1rem;
+  font-weight: bold;
+}
+.action-button-session {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  width: 28%; /* Assure un bon espacement des boutons */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Styles pour les icônes */
+.action-icon {
+  margin-left: auto;
+  font-size: 1.5rem; /* Ajustez la taille de l'icône ici */
+  width: 20%;
+  text-align: right;
+}
+/* ModalHeaderStyles.css */
+.modal-header .btn-close {
+  color: white; /* Changez la couleur ici */
+  opacity: 1; /* Pour garantir que la couleur est bien visible */
+}
