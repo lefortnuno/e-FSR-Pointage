@@ -101,9 +101,12 @@ class BarcodeScannerSortie extends React.Component {
         this.setState({ results });
 
         try {
-          await axios.post("https://collimation.onrender.com/api/pointage/", {
-            employeIm: barcodeText,
-          });
+          await axios.post(
+            "https://collimation.onrender.com/api/pointage/cloture/",
+            {
+              employeIm: barcodeText,
+            }
+          );
           console.log("POST request successful");
         } catch (error) {
           console.error("Error sending POST request:", error);
