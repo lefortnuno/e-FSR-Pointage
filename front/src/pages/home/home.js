@@ -7,7 +7,7 @@ export default function Home() {
     <Template>
         <div className="row mt-0">
             <Homie/>
-            <DaysOFF/> 
+            {/* <DaysOFF/>  */}
         </div>
     </Template>
   );

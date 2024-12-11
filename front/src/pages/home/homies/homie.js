@@ -28,19 +28,17 @@ export default function Homie() {
               <div className="card-body position-relative z-index-1 p-3 ">
                 <BsWifi className="text-white pt-2" size={35} />
                 <h5 className="text-white mt-2 mb-5 pt-2 pb-2">
-                  Rêve d'un nouveau monde
+                  Faculté des Sciences de Rabat
                 </h5>
                 <div className="d-flex">
                   <div className="d-flex">
                     <div className="me-4">
-                      <p className="text-white text-sm opacity-8 mb-0">
-                        Agence
-                      </p>
-                      <h6 className="text-white mb-0">BOA M/scar</h6>
+                      <p className="text-white text-sm opacity-8 mb-0">Pays</p>
+                      <h6 className="text-white mb-0">Maroc</h6>
                     </div>
                     <div>
                       <p className="text-white text-sm opacity-8 mb-0">Ville</p>
-                      <h6 className="text-white mb-0">F/tsoa</h6>
+                      <h6 className="text-white mb-0">Rabat</h6>
                     </div>
                   </div>
                   <div className="ms-auto w-20 d-flex align-items-end justify-content-end text-white">
@@ -52,7 +50,7 @@ export default function Homie() {
           </div>
         </div>
 
-        <div className="col-xl-6">
+        {/* <div className="col-xl-6">
           <div className="row">
             <div className="col-md-6">
               <div className="card">
@@ -142,8 +140,12 @@ export default function Homie() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
+      <div
+        className="col-md-12 mb-lg-0 mb-4"
+        style={{ minHeight: "36vh" }}
+      ></div>
     </div>
   );
 }

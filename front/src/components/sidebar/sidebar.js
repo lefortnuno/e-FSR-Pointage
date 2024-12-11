@@ -29,6 +29,11 @@ export default function Sidebar() {
         // id="sidenav-collapse-main"
       >
         <ul className="navbar-nav">
+              <li className="nav-item mt-3">
+                <h6 className="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">
+                  Pages: Commun
+                </h6>
+              </li>
           <li className="nav-item">
             <Link
               to="/home/"

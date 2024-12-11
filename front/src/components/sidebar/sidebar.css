@@ -4,10 +4,11 @@
 
 .sidenav-header {
   background-image: var(--logo-background);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center; 
-  width: 100%; 
+  width: 100%;  
+  object-fit: cover;
 }
 
 
