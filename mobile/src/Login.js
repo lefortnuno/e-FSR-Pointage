@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-const API_STATIQUE = "https://eboas.onrender.com/api/";
+const API_STATIQUE = "https://collimation.onrender.com/api/";
 
 const Login = ({ navigation }) => {
   const { height } = Dimensions.get("window");

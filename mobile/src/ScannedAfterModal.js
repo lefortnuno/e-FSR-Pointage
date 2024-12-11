@@ -27,7 +27,7 @@ const ScannedAfterModal = ({
   inputnlery,
   im,
 }) => {
-  const API_STATIQUE = "https://eboas.onrender.com/api/";
+  const API_STATIQUE = "https://collimation.onrender.com/api/";
   const { height } = Dimensions.get("window");
   const [motif, setmotif] = useState(null);
   const [isFocus, setIsFocus] = useState(false);

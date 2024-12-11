@@ -67,11 +67,11 @@ export default function Pointage() {
           {/* -------------------------- FIN -------------------------- */}
         </div>
       </main>
-      <div className="button-pdf">
+      {/* <div className="button-pdf">
         <button className="btn btn-primary" onClick={generatePDF}>
           Télécharger PDF
         </button>
-      </div>
+      </div> */}
     </Template>
   );
   //#endregion

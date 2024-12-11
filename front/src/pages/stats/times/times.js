@@ -44,7 +44,7 @@ const HeuresTravailleesChart = ({ url }) => {
   }, [url]);
 
   return (
-    <div>
+    <div className="bg-white border-radius-xl p-4">
       <h5>Moyenne des heures travaillées par jour de la semaine</h5>
       <ResponsiveContainer width="100%" height={300}>
         <BarChart

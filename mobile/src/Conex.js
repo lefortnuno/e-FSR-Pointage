@@ -13,7 +13,7 @@ import {
 import React, { useState, useEffect } from "react";
 
 export default function Conex({ navigation }) {
-  const API_STATIQUE = "https://eboas.onrender.com/api/";
+  const API_STATIQUE = "https://collimation.onrender.com/api/";
   const [userName, setUserName] = useState("");
   const [userPassword, setUserPassword] = useState("");
   const { height } = Dimensions.get("window");

@@ -8,7 +8,7 @@ import ScannedAfterModal from "./ScannedAfterModal";
 // import { SUN_API_URL } from "@env";
 
 const QrcodeScane = () => {
-  const API_STATIQUE = "https://eboas.onrender.com/api/";
+  const API_STATIQUE = "https://collimation.onrender.com/api/";
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
   const [openModal, setOpenModal] = useState(false);

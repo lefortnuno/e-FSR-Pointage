@@ -18,7 +18,7 @@ const data = [
 ];
 
 const Dashboard = () => {
-  const API_STATIQUE = "https://eboas.onrender.com/api/";
+  const API_STATIQUE = "https://collimation.onrender.com/api/";
   const [pointageData, setPointageData] = React.useState([]);
   const [pointage, setPointage] = React.useState({});
   const isFocused = useIsFocused();

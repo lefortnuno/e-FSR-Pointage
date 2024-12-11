@@ -43,7 +43,7 @@ export default function Sidebar() {
             </Link>
           </li>
 
-          {u_info.u_roleU && (
+          {/* {u_info.u_roleU && (
             <li className="nav-item">
               <Link
                 to="/conges/"
@@ -57,9 +57,9 @@ export default function Sidebar() {
                 <span className="navText">Congés</span>
               </Link>
             </li>
-          )}
+          )} */}
 
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link
               to="/employees/"
               className={`nav-link customNavLink ${
@@ -71,7 +71,8 @@ export default function Sidebar() {
               </div>
               <span className="navText">Employées</span>
             </Link>
-          </li>
+          </li> */}
+
           <li className="nav-item">
             <Link
               to="/stats/"
@@ -148,28 +149,7 @@ export default function Sidebar() {
           )}
         </ul>
       </div>
-
-      <div className="sidenav-footer mx-3 ">
-        <div
-          className="card card-background shadow-none card-background-mask-secondary"
-          id="sidenavCard"
-        >
-          <div className="full-background"></div>
-          <div className="card-body text-start p-3 w-100">
-            <div className="docs-info">
-              <h6 className="text-black text-xs up mb-0">Avez-vous</h6>
-              <p className="text-black text-xs font-weight-bold">
-                Besoin d'aide ?
-              </p>
-              <Link to="/docs/">
-                <div className="btn btn-white btn-sm w-100 mb-0 docs-aide">
-                  Documentation
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+ 
     </aside>
   );
 }

@@ -11,7 +11,7 @@ export default function Fotter() {
                   className="font-weight-bold"
                   target="_blank"
                 >
-                  © 2024 Malala Ny Aina
+                  © 2024 TROFEL & CHAIMA
                 </a>{" "}
                 - TOUS DROITS RÉSERVÉS.
               </div>
@@ -24,7 +24,7 @@ export default function Fotter() {
                     className="nav-link text-muted"
                     target="_blank"
                   >
-                    B.O.A
+                    F.S.R
                   </a>
                 </li>
                 <li className="nav-item">
@@ -37,10 +37,7 @@ export default function Fotter() {
                   </a>
                 </li>
                 <li className="nav-item cursor-pointer">
-                  <div className="nav-link text-muted">Apropos</div>
-                </li>
-                <li className="nav-item cursor-pointer">
-                  <div className="nav-link pe-0 text-muted">License</div>
+                  <div className="nav-link text-muted">APROPOS</div>
                 </li>
               </ul>
             </div>
