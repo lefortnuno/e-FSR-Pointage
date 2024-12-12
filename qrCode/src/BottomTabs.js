@@ -20,7 +20,7 @@ const BottomTabs = () => {
     >
       <Tab.Screen
         name="BarcodeScannerSortie"
-        component={ClotureQrCode}
+        component={BarcodeScannerSortie}
         options={{
           tabBarLabel: "Sortie",
           tabBarIcon: ({ color, size }) => (
@@ -41,7 +41,7 @@ const BottomTabs = () => {
       />
       <Tab.Screen
         name="BarcodeScannerEntree"
-        component={QrcodeScane}
+        component={BarcodeScannerEntree}
         options={{
           tabBarLabel: "Entrée",
           tabBarIcon: ({ color, size }) => (
