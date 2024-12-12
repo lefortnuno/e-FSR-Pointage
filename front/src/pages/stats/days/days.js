@@ -43,7 +43,7 @@ const JoursTravaillesChart = ({ url }) => {
 
   return (
     <div className="bg-white border-radius-xl p-4">
-      <h5>Nombre moyen d'employés travaillant chaque jour de la semaine</h5>
+      <h5>Nombre moyen d'étudiant présent chaque jour de la semaine</h5>
       <ResponsiveContainer width="100%" height={300}>
         <BarChart
           data={joursData}

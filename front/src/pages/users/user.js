@@ -278,7 +278,7 @@ export default function User() {
                                 </ul>
                               </div>
                               <p className="text-white text-sm text-end font-weight-bolder mt-auto mb-0">
-                                {s.roleU ? "Admin" : "Employé(e)"}
+                                {s.roleU ? "Professeur" : "Etudiant(e)"}
                               </p>
                             </div>
                           </div>

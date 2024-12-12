@@ -438,12 +438,12 @@ export default function SignInForm({ setQrCode }) {
   //#endregion
 
   const departementOptions = [
-    "Secretariat",
-    "Caissier",
-    "Accueil",
-    "Sécurité",
-    "Adjoint",
-    "Chargé de clientèle",
+    "Licence 1",
+    "Licence 2",
+    "Licence 3",
+    "Master 1",
+    "Master 2",
+    "Doctorant",
     "Stagiaire",
   ];
 

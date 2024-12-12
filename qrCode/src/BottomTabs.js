@@ -4,8 +4,8 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import Dashboard from "./Dashboard";
 import QrcodeScane from "./QrcodeScane";
 import ClotureQrCode from "./ClotureQrCode";
-import BarcodeScannerEntree from "./BarcodeScannerEntree";
-import BarcodeScannerSortie from "./BarcodeScannerSortie";
+// import BarcodeScannerEntree from "./BarcodeScannerEntree";
+// import BarcodeScannerSortie from "./BarcodeScannerSortie";
 
 const Tab = createBottomTabNavigator();
 
@@ -20,7 +20,7 @@ const BottomTabs = () => {
     >
       <Tab.Screen
         name="BarcodeScannerSortie"
-        component={BarcodeScannerSortie}
+        component={ClotureQrCode}
         options={{
           tabBarLabel: "Sortie",
           tabBarIcon: ({ color, size }) => (
@@ -41,7 +41,7 @@ const BottomTabs = () => {
       />
       <Tab.Screen
         name="BarcodeScannerEntree"
-        component={BarcodeScannerEntree}
+        component={QrcodeScane}
         options={{
           tabBarLabel: "Entrée",
           tabBarIcon: ({ color, size }) => (
