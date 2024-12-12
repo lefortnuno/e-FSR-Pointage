@@ -3,7 +3,7 @@ const PointageController = require("../controllers/pointage.controller");
 const admin = require("../middlewares/admin.middleware");
 
 router.post("/", PointageController.createPointage);
-router.post("/web/", PointageController.createPointageWeb);
+router.post("/web/", PointageController.createPointage);
 router.post("/ptg/", PointageController.getPointageEmployee);
 router.post("/billan/", PointageController.getBillanEmployee);
 router.post(
@@ -42,7 +42,7 @@ router.post(
 router.get("/:id", admin.checkUtilisateur, PointageController.getPointageById);
 
 router.put("/cloture", PointageController.cloturePointage);
-router.put("/web/sortie/", PointageController.cloturePointageWeb);
+router.put("/web/sortie/", PointageController.cloturePointage);
 router.put("/:id", admin.checkUtilisateur, PointageController.updatePointage);
 
 router.delete(

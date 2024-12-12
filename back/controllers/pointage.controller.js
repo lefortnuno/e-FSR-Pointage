@@ -17,7 +17,7 @@ module.exports.createPointage = async (req, res) => {
     // fuseau horaire de Madagascar
     const now = new Date();
     const options = { timeZone: "Indian/Antananarivo", hour12: false };
-    const currentDate = new Date(now.toLocaleString("en-US", options));
+    const currentDate = new Date();
 
     const dateDuJour = currentDate.toISOString().split("T")[0]; // Format YYYY-MM-DD
     const heureEntree = currentDate.toTimeString().split(" ")[0].slice(0, 5); // Format HH:MM
@@ -197,7 +197,7 @@ module.exports.cloturePointage = async (req, res) => {
       // Heure Madagascar
       const now = new Date();
       const options = { timeZone: "Indian/Antananarivo", hour12: false };
-      const currentDate = new Date(now.toLocaleString("en-US", options));
+      const currentDate = new Date();
 
       const heureSortie = currentDate.toTimeString().split(" ")[0].slice(0, 5); // Format HH:MM
 
