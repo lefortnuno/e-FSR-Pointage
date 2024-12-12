@@ -144,7 +144,7 @@ export default function Card1({ details, onUserUpdate, congeData, u_info }) {
                           // Congé validé par l'admin
                           <div className="w-80 text-end">
                             <div className="btn btn-danger mb-0 text-center">
-                              En période de congé
+                              En période de vacance
                             </div>
                           </div>
                         ) : (
@@ -155,7 +155,7 @@ export default function Card1({ details, onUserUpdate, congeData, u_info }) {
                           >
                             {!u_info.u_roleU && (
                               <div className="btn btn-dark mb-0 text-center">
-                                Réitérer la demande de congé
+                                Réitérer la demande de absence
                               </div>
                             )}
                           </div>
@@ -176,7 +176,7 @@ export default function Card1({ details, onUserUpdate, congeData, u_info }) {
                       >
                         {!u_info.u_roleU && (
                           <div className="btn btn-primary mb-0 text-center">
-                            Demander un congé
+                            Demander une absence
                           </div>
                         )}
                       </div>
@@ -189,7 +189,7 @@ export default function Card1({ details, onUserUpdate, congeData, u_info }) {
                     >
                       {!u_info.u_roleU && (
                         <div className="btn btn-primary mb-0 text-center">
-                          Demander un congé
+                          Demander une absence
                         </div>
                       )}
                     </div>
@@ -275,7 +275,7 @@ function renderAcceptedLeave(nbJourC, dateDeFin) {
         <div className="w-100">
           <div className="d-flex mb-2">
             <span className="me-2 text-sm font-weight-bold text-dark">
-              En congé de
+              En vacance de
             </span>
             <span className="ms-auto text-sm font-weight-bold">{nbJourC}j</span>
           </div>
@@ -344,7 +344,7 @@ function renderDeniedRequest() {
         <div className="w-100">
           <div className="d-flex mb-2">
             <span className="me-2 text-sm font-weight-bold text-dark">
-              Demande de congé refusé
+              Demande d' absence refusé
             </span>
             <span className="ms-auto text-sm font-weight-bold"> </span>
           </div>
@@ -357,7 +357,7 @@ function renderDeniedRequest() {
         <div className="w-100">
           <div className="d-flex mb-2">
             <span className="me-2 text-sm font-weight-bold text-dark">
-              Réitérez la demande de congé
+              Réitérez la demande d' absence
             </span>
             <span className="ms-auto text-sm font-weight-bold"> </span>
           </div>
@@ -377,7 +377,7 @@ function renderNoRequest() {
         <div className="w-100">
           <div className="d-flex mb-2">
             <span className="me-2 text-sm font-weight-bold text-dark">
-              Aucune demande de congé
+              Aucune demande d' absence
             </span>
             <span className="ms-auto text-sm font-weight-bold"> </span>
           </div>
@@ -390,7 +390,7 @@ function renderNoRequest() {
         <div className="w-100">
           <div className="d-flex mb-2">
             <span className="me-2 text-sm font-weight-bold text-dark">
-              Envoyez une demande de congé
+              Envoyez une demande d' absence
             </span>
             <span className="ms-auto text-sm font-weight-bold"> </span>
           </div>

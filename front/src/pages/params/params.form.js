@@ -371,13 +371,13 @@ export default function ParamsForm({ inputs, setInputs }) {
   //#endregion
 
   const departementOptions = [
-    "Secretariat",
-    "Caissier",
-    "Accueil",
-    "Sécurité",
-    "Adjoint",
-    "Chargé de clientèle",
-    "Stagiere",
+    "Licence 1",
+    "Licence 2",
+    "Licence 3",
+    "Master 1",
+    "Master 2",
+    "Doctorant",
+    "Stagiaire",
   ];
 
   return (

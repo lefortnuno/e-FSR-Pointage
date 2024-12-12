@@ -27,7 +27,7 @@ export default function Card3({ details, congeData, fahatongavana }) {
         </div>
         <div className="card-body p-3">
           <h6 className="text-uppercase text-body text-xs font-weight-bolder">
-            Employée
+            Etudiant
           </h6>
           <ul className="list-group text-start">
             <li className="list-group-item border-0 px-0 d-flex align-items-center">
@@ -55,7 +55,7 @@ export default function Card3({ details, congeData, fahatongavana }) {
                   readOnly
                 />
                 <label className="form-check-label text-body ms-2 text-truncate w-80 mb-0">
-                  <b className="text-dark ms-4 me-4">Demande de congé: </b>
+                  <b className="text-dark ms-4 me-4">Demande d'absence: </b>
                   {data.reqConge ? "Oui" : "Non"}
                 </label>
               </div>
@@ -105,7 +105,7 @@ export default function Card3({ details, congeData, fahatongavana }) {
                 />
                 <label className="form-check-label text-body ms-2 text-truncate w-80 mb-0">
                   <b className="text-dark ms-4 me-4">Rôle: </b>
-                  {data.roleU ? "Administrateur" : "Utilisateur"}
+                  {data.roleU ? "Professeur" : "Etudiqnt"}
                 </label>
               </div>
             </li>
