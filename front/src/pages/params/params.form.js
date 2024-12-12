@@ -513,7 +513,7 @@ export default function ParamsForm({ inputs, setInputs }) {
 
         {isInfoCompleteAndValid && (
           <div className="labelInput">
-            <label>Veuillez créer votre code e-BOA: </label>
+            <label>Veuillez créer votre code e-FSR: </label>
             <div className="groupPwdPlace">
               <div className="groupPwd">
                 {pwdRefs.map((ref, index) => (

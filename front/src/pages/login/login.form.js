@@ -376,7 +376,7 @@ export default function LoginForm() {
         </div>
         {isimCompleteAndValid && showMe && (
           <div className="labelInput">
-            <label>Veuillez saisir votre code e-BOA: </label>
+            <label>Veuillez saisir votre code e-FSR: </label>
             <div className="groupPwdPlace">
               <div className="groupPwd">
                 {pwdRefs.map((ref, index) => (

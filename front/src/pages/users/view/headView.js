@@ -34,7 +34,7 @@ export default function HeadView({ details }) {
                 )}
               </h5>
               <p className="mb-0 text-white text-sm">
-                BOA / {details && <>{details.departement}</>}
+                FSR / {details && <>{details.departement}</>}
               </p>
             </div>
           </div>
