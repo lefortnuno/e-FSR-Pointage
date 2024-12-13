@@ -175,7 +175,15 @@ export default function Sidebar() {
                   <div className="navIcone">
                     <BsPersonCircle />
                   </div>
-                  <span className="navText">Profile</span>
+                  <span
+                    className={`navText ${
+                      location.pathname === `/aboutUser/${u_info.u_im}`
+                        ? "atato"
+                        : ""
+                    }`}
+                  >
+                    Profile
+                  </span>
                 </Link>
               </li>
             </>
