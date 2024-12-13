@@ -8,7 +8,7 @@ import "./head.css";
 export default function HeadView({ details }) {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid mt-4">
         <div className="page-header min-height-200 border-radius-lg mt-0 p-3 d-flex flex-column flex-md-row align-items-center justify-content-between">
           <span className="mask bg-primary opacity-9"></span>
           {/* Profile Section */}

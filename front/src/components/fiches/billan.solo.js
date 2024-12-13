@@ -55,7 +55,7 @@ const BillanSolo = ({ billanMois1, billanMois2, im }) => {
     <div className="bg-white border-radius-lg p-4">
       <div className="row mt-4" ref={ficheRef}>
         <div className="text-center mb-3">
-          <h5>BILAN EMPLOYÉ :</h5>
+          <h5>BILAN ETUDIANT</h5>
           <MonthRange startOfWeek={new Date()} />
         </div>
 
@@ -71,7 +71,7 @@ const BillanSolo = ({ billanMois1, billanMois2, im }) => {
             </thead>
             <tbody className="text-center">
               <tr>
-                <td>Total heure de travail</td>
+                <td>Total heure de présence</td>
                 <td>
                   {formatBillan(billanMois1[0]?.heures_travail_total) || "-"}
                 </td>
@@ -89,7 +89,7 @@ const BillanSolo = ({ billanMois1, billanMois2, im }) => {
                 </td>
               </tr>
               <tr>
-                <td>Total jours de travail</td>
+                <td>Total jours de présence</td>
                 <td>{billanMois1[0]?.jours_travail_total || "-"}j</td>
                 <td>{billanMois2[0]?.jours_travail_total || "-"}j</td>
               </tr>
@@ -105,36 +105,36 @@ const BillanSolo = ({ billanMois1, billanMois2, im }) => {
                 </td>
               </tr>
               <tr>
-                <td>Commentaires</td>{" "}
+                <td>Commentaires</td>
                 <td style={{ wordWrap: "break-word", whiteSpace: "normal" }}>
                   {billanMois1[0]?.jours_absence_total > 25
-                    ? "Vous avez pris beaucoup de jours d'absence, il serait important de revoir votre planning."
+                    ? "Trop d'absences, revoyez votre organisation."
                     : billanMois1[0]?.jours_absence_total > 15
-                    ? "Il y a un nombre d'absences conséquent. N'oubliez pas de consulter votre supérieur pour évaluer l'impact."
+                    ? "Absences conséquentes, évaluez l'impact."
                     : billanMois1[0]?.jours_absence_total > 10
-                    ? "Quelques jours d'absence ce mois-ci, assurez-vous que cela ne perturbe pas vos tâches critiques."
+                    ? "Absences notables, attention aux tâches critiques."
                     : billanMois1[0]?.jours_absence_total > 5
-                    ? "Quelques jours d'absence, mais vous êtes toujours dans les objectifs. Continuez à suivre vos priorités."
-                    : "Peu d'absences, bon travail ce mois-ci, continuez ainsi!"}
+                    ? "Quelques absences, mais dans les objectifs."
+                    : "Très peu d'absences, excellent travail !"}
                 </td>
                 <td style={{ wordWrap: "break-word", whiteSpace: "normal" }}>
-                  {parseInt(billanMois2[0]?.jours_absence_total, 9) -
+                  {parseInt(billanMois2[0]?.jours_absence_total, 10) -
                     nbJ_restant >
                   25
-                    ? "Vous avez pris beaucoup de jours d'absence, il serait important de revoir votre planning."
-                    : parseInt(billanMois2[0]?.jours_absence_total, 9) -
+                    ? "Trop d'absences, revoyez votre organisation."
+                    : parseInt(billanMois2[0]?.jours_absence_total, 10) -
                         nbJ_restant >
                       15
-                    ? "Il y a un nombre d'absences conséquent. N'oubliez pas de consulter votre supérieur pour évaluer l'impact."
-                    : parseInt(billanMois2[0]?.jours_absence_total, 9) -
+                    ? "Absences conséquentes, évaluez l'impact."
+                    : parseInt(billanMois2[0]?.jours_absence_total, 10) -
                         nbJ_restant >
                       10
-                    ? "Quelques jours d'absence ce mois-ci, assurez-vous que cela ne perturbe pas vos tâches critiques."
-                    : parseInt(billanMois2[0]?.jours_absence_total, 9) -
+                    ? "Absences notables, attention aux tâches critiques."
+                    : parseInt(billanMois2[0]?.jours_absence_total, 10) -
                         nbJ_restant >
                       5
-                    ? "Quelques jours d'absence, mais vous êtes toujours dans les objectifs. Continuez à suivre vos priorités."
-                    : "Peu d'absences, bon travail ce mois-ci, continuez ainsi!"}
+                    ? "Quelques absences, mais dans les objectifs."
+                    : "Très peu d'absences, excellent travail !"}
                 </td>
               </tr>
             </tbody>
@@ -142,11 +142,11 @@ const BillanSolo = ({ billanMois1, billanMois2, im }) => {
         </div>
       </div>
 
-      <div className="button-pdf">
+      {/* <div className="button-pdf">
         <button className="btn btn-primary me-4" onClick={generatePDF}>
           Télécharger PDF
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

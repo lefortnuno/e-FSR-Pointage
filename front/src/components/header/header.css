@@ -27,7 +27,7 @@
   flex-direction: column;
   width: 50%;
 }
-.u-text h5{
+.u-text h5 {
   overflow: hidden;
 }
 .dropdownProfile .dropdown-item {
@@ -45,13 +45,9 @@
   padding-left: 1rem;
 }
 
-.dropdown-item:hover {
-  background-color: transparent;
-}
-
 .dropdownProfile .dropdown-item:hover {
-  background-color: gainsboro;
-  /* color: var(--primary-color) */
+  color: white;
+  background: linear-gradient(90deg, #124bbd 0%, #0b4ccd 100%);
 }
 
 /* font-weight: bold; */

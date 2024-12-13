@@ -63,8 +63,8 @@ module.exports.loginUtilisateur = async (req, res) => {
       const isPasswordValid = bcrypt.compareSync(pwd, user.pwd);
 
       if (isPasswordValid) {
-        const token = createToken(user); 
-        ResponseHelper.sendResponse(res, true, "Connecté à e-BOA!", {
+        const token = createToken(user);
+        ResponseHelper.sendResponse(res, true, "Connecté à e-FSR!", {
           user,
           token,
         });

@@ -17,28 +17,25 @@ export default function Card2({ details, onUserUpdate }) {
     setShowModal(false);
     onUserUpdate();
   };
-
+  
   const departmentMessages = {
-    Secretariat:
-      "Je veille au bon déroulement des opérations administratives, en facilitant la communication et l'organisation au sein de l'équipe. Mon rôle est essentiel pour le soutien et la coordination de nos activités.",
+    "Licence 1":
+      "En début de parcours, je découvre les bases de ma formation et développe des compétences essentielles pour réussir mes études supérieures.",
 
-    Caissier:
-      "Je gère les transactions avec précision et professionnalisme, assurant la sécurité des opérations financières. La confiance et la transparence sont au cœur de mon travail.",
+    "Licence 2":
+      "À ce stade, je consolide mes connaissances et approfondis les concepts clés pour construire une expertise solide dans mon domaine.",
 
-    Accueil:
-      "Premier point de contact, j'accueille nos visiteurs avec chaleur et professionnalisme. Mon objectif est de créer une première impression positive et mémorable.",
+    "Licence 3":
+      "Dernière étape de la licence, je me prépare à la vie professionnelle ou à poursuivre en master, en maîtrisant des compétences avancées.",
 
-    Sécurité:
-      "Je veille à la sécurité de tous au sein de l’entreprise, assurant une surveillance constante. Mon rôle est de garantir un environnement sûr et serein pour chacun.",
+    "Master 1":
+      "Première année de spécialisation, je m'investis dans des projets ambitieux et acquiers une expertise pointue dans mon domaine.",
 
-    Adjoint:
-      "J'assiste l'équipe pour atteindre nos objectifs avec efficacité. Mon soutien contribue à la fluidité et au succès des projets communs.",
+    "Master 2":
+      "À la fin de mon parcours, je me concentre sur mon mémoire ou projet professionnel, prêt à intégrer le monde du travail ou poursuivre en doctorat.",
 
-    "Chargé de clientèle":
-      "À l’écoute des besoins des clients, je m’assure de leur satisfaction en proposant des solutions adaptées. Mon objectif est de renforcer leur confiance et leur fidélité.",
-
-    Stagiaire:
-      "En formation, j’apporte mon énergie et ma curiosité pour apprendre et contribuer activement. C'est une opportunité pour moi de grandir professionnellement.",
+    Professeur:
+      "Avec passion et rigueur, je transmets des connaissances et guide mes étudiants vers leur réussite académique et professionnelle.",
   };
 
   return (

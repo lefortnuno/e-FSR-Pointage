@@ -72,11 +72,11 @@ export default function FicheSolo({ userData, im }) {
           </table>
         </div>
       </div>
-      <div className="button-pdf">
+      {/* <div className="button-pdf">
         <button className="btn btn-primary me-4" onClick={generatePDF}>
           Télécharger PDF
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

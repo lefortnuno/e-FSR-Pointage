@@ -9,7 +9,7 @@
 
 /* CSS body couleur GRAY */
 html {
-  background-color: rgba(193, 192, 192, 0.5);
+  background-color: rgba(193, 192, 192, 0.5); 
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,6 +20,7 @@ html {
 
 .App-header {
   background-color: #282c34;
+  background-color: #043ba9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

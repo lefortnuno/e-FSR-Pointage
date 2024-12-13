@@ -97,7 +97,7 @@ class BarcodeScannerEntree extends React.Component {
 
     this.reader.addResultListener(async (results) => {
       if (!this.ifDecodingFile && results.length > 0) {
-        const barcodeText = results[0].barcodeText; // Assume the first result is the desired one
+        const barcodeText = results[0].barcodeText;  
         this.setState({ results });
 
         try {

@@ -1,9 +1,9 @@
 :root {
   --based-color: #ef9e1d;
-  --primary-color: #18a037;
-  --primary-color-hover: #079529;
+  --primary-color: #124bbd;
+  --primary-color-hover: #124bbd;
   --primary-color-light: #9eeb47;
-  --secondary-color: #89e4b5;
+  --secondary-color: #4b7fe7;
   --text-dark: #020617;
   --text-light: #8995a7;
   --text-light2: rgb(83, 81, 81);
@@ -11,7 +11,7 @@
   --white: #ffffff;
   --max-width: 1200px;
   --maintyTsara: #000;
-  --tonga: #18a037;
+  --tonga: #124bbd;
   --tsyTonga: #cd0000;
   --bgSecondary: #6c757d;
 }

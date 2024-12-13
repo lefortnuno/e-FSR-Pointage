@@ -161,7 +161,8 @@ export default function Pointage() {
           />
         </div>
       }
-    >
+    > 
+
       <div className="date-container-wrapper mt-4 mb-2">
         <span className="me-2 cursor-pointer" onClick={handlePreviousDay}>
           <BsArrowLeftCircleFill />

@@ -51,14 +51,7 @@ export default function Params() {
                 src={userData.qrCodeValue}
                 className="renduQRCODE"
                 alt="QR Code"
-              />
-              <a
-                href={userData.qrCodeValue}
-                download="QRCode.png"
-                className="download-icon-params"
-              >
-                <BsDownload />
-              </a>
+              /> 
             </>
           ) : (
             <img src={eKali} className="renduQRCODE" alt="logo-eKali" />

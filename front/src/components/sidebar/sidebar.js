@@ -29,11 +29,11 @@ export default function Sidebar() {
         // id="sidenav-collapse-main"
       >
         <ul className="navbar-nav">
-              <li className="nav-item mt-3">
-                <h6 className="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">
-                  Pages: Commun
-                </h6>
-              </li>
+          <li className="nav-item mt-3">
+            <h6 className="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">
+              Pages: Commun
+            </h6>
+          </li>
           <li className="nav-item">
             <Link
               to="/home/"
@@ -44,7 +44,13 @@ export default function Sidebar() {
               <div className="navIcone">
                 <BsHouseFill />
               </div>
-              <span className="navText">Accueil</span>
+              <span
+                className={`navText ${
+                  location.pathname === "/home/" ? "atato" : ""
+                }`}
+              >
+                Accueil
+              </span>
             </Link>
           </li>
 
@@ -88,7 +94,13 @@ export default function Sidebar() {
               <div className="navIcone">
                 <BsBarChartFill />
               </div>
-              <span className="navText">Statistiques</span>
+              <span
+                className={`navText ${
+                  location.pathname === "/stats/" ? "atato" : ""
+                }`}
+              >
+                Statistiques
+              </span>
             </Link>
           </li>
 
@@ -109,7 +121,13 @@ export default function Sidebar() {
                   <div className="navIcone">
                     <BsPeopleFill />
                   </div>
-                  <span className="navText">Utilisateurs</span>
+                  <span
+                    className={`navText ${
+                      location.pathname === "/users/" ? "atato" : ""
+                    }`}
+                  >
+                    Utilisateurs
+                  </span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -126,7 +144,17 @@ export default function Sidebar() {
                   <div className="navIcone">
                     <BsClockFill />
                   </div>
-                  <span className="navText">Pointages</span>
+                  <span
+                    className={`navText ${
+                      location.pathname === "/pointages/" ||
+                      location.pathname === "/absences/" ||
+                      location.pathname === "/pointagesWeeks/"
+                        ? "atato"
+                        : ""
+                    }`}
+                  >
+                    Pointages
+                  </span>
                 </Link>
               </li>
             </>
@@ -154,7 +182,6 @@ export default function Sidebar() {
           )}
         </ul>
       </div>
- 
     </aside>
   );
 }
