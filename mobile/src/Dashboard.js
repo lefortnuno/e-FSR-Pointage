@@ -79,8 +79,8 @@ const Dashboard = () => {
           return (
             <>
               <Appbar.Header>
-                <Text style={{ fontSize: 30, color: "#fcba03" }}> FS</Text>
-                <Text style={{ fontSize: 30, color: "#1d8758" }}>R</Text>
+                <Text style={{ fontSize: 30, color: "#fcba03" }}> BO</Text>
+                <Text style={{ fontSize: 30, color: "#1d8758" }}>A</Text>
                 <Appbar.Content title="" />
                 <TouchableOpacity
                   style={{

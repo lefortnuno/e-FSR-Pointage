@@ -3,9 +3,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Dashboard from "./Dashboard";
 import QrcodeScane from "./QrcodeScane";
-import ClotureQrCode from "./ClotureQrCode";
-// import BarcodeScannerEntree from "./BarcodeScannerEntree";
-// import BarcodeScannerSortie from "./BarcodeScannerSortie";
+import ClotureQrCode from "./ClotureQrCode"; 
 
 const Tab = createBottomTabNavigator();
 

@@ -65,7 +65,7 @@ const Login = ({ navigation }) => {
       >
         <ImageBackground
           style={{
-            height: height / 7.5,
+            height: height / 10.5,
             width: 250,
           }}
           resizeMode="contain"
@@ -96,7 +96,7 @@ const Login = ({ navigation }) => {
             }}
           >
             {" "}
-            FS
+            BO
           </Text>
           <Text
             style={{
@@ -104,7 +104,7 @@ const Login = ({ navigation }) => {
               color: "#1d8758",
             }}
           >
-            R
+            A
           </Text>
         </Text>
       </View>
@@ -122,7 +122,7 @@ const Login = ({ navigation }) => {
             color: "gray",
           }}
         >
-          Faculté des Sciences de Rabat !
+          La banque toujours à vos côtés !
         </Text>
       </View>
       <View
