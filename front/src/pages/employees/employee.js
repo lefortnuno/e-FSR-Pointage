@@ -102,7 +102,7 @@ export default function Employee() {
     {
       columns,
       data,
-      initialState: { pageIndex: 0, pageSize: 5  },
+      initialState: { pageIndex: 0, pageSize: 5 },
     },
     useGlobalFilter,
     useSortBy,
@@ -119,7 +119,7 @@ export default function Employee() {
           <input
             type="text"
             placeholder="Rechercher ..."
-            className="form-control"
+            className="form-control  text-dark"
             onChange={(e) => setGlobalFilter(e.target.value)}
           />
         </div>
@@ -130,7 +130,7 @@ export default function Employee() {
         className="fixed-plugin"
         title="Nouvel utilisateur"
       >
-        <div className="fixed-plugin-button text-white bg-dark position-fixed px-3 py-2" >
+        <div className="fixed-plugin-button text-white bg-dark position-fixed px-3 py-2">
           <BsPersonPlusFill />
         </div>
       </Link>

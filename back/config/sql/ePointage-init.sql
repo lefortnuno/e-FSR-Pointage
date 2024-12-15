@@ -18,7 +18,7 @@ CREATE TABLE utilisateurs (
     "roleU" BOOLEAN DEFAULT FALSE,
     -- 0 = USAGER, 1 = ADMIN
     "validCompte" BOOLEAN DEFAULT FALSE,
-    "enConge" BOOLEAN DEFAULT FALSE,
+    "enVacance" BOOLEAN DEFAULT FALSE,
     "nbJour" INT DEFAULT 40,
     pic VARCHAR(50) DEFAULT NULL,
     "qrCodeValue" TEXT,
@@ -28,12 +28,12 @@ CREATE TABLE utilisateurs (
 -- Création de la table pointages
 CREATE TABLE pointages (
     id SERIAL PRIMARY KEY,
-    "employeIm" VARCHAR(6) NOT NULL,
+    "etudiantIm" VARCHAR(6) NOT NULL,
     "heureEntree" TIME,
     "heureSortie" TIME DEFAULT NULL,
     "dateDuJour" DATE,
     coms VARCHAR(100),
-    CONSTRAINT fk_employe FOREIGN KEY ("employeIm") REFERENCES utilisateurs(im) ON DELETE CASCADE
+    CONSTRAINT fk_employe FOREIGN KEY ("etudiantIm") REFERENCES utilisateurs(im) ON DELETE CASCADE
 );
 
 -- Création de la table congEs
@@ -84,7 +84,7 @@ INSERT INTO
         pwd,
         "roleU",
         "validCompte",
-        "enConge",
+        "enVacance",
         "nbJour",
         pic,
         "qrCodeValue",
@@ -287,7 +287,7 @@ VALUES
 -- DONNEES POINTAGES   
 INSERT INTO
     pointages (
-        "employeIm",
+        "etudiantIm",
         "heureEntree",
         "heureSortie",
         "dateDuJour"

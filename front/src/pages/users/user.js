@@ -151,7 +151,7 @@ export default function User() {
         name="searchValue"
         placeholder="Rechercher ...."
         autoComplete="off"
-        className="form-control text-dark ps-1"
+        className="form-control text-dark"
         ref={searchInputRef}
         onChange={rechercheElement}
       />

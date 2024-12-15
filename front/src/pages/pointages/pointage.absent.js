@@ -189,7 +189,7 @@ export default function PointageDesAbsent() {
         name="searchValue"
         placeholder="Rechercher ...."
         autoComplete="off"
-        className="form-control text-dark ps-1"
+        className="form-control text-dark"
         ref={searchInputRef}
         onChange={rechercheElement}
       />
@@ -288,7 +288,7 @@ export default function PointageDesAbsent() {
                           <td>{s.coms ? s.coms : "-"}</td>
                           <td>
                             <div
-                              className="callToAction"
+                              className="callToAction text-success"
                               onClick={() => handleEditClick(s)}
                             >
                               <BsQrCode  />
@@ -327,14 +327,7 @@ export default function PointageDesAbsent() {
           )}
           {/* -------------------------- FIN -------------------------- */}
         </div>
-      </main>
-      {histo.length > 0 && (
-        <div className="button-pdf">
-          <button className="btn btn-primary" onClick={generatePDF}>
-            Télécharger PDF
-          </button>
-        </div>
-      )}
+      </main> 
     </Template>
   );
   //#endregion

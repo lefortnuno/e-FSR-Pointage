@@ -344,7 +344,7 @@ function renderDeniedRequest() {
         <div className="w-100">
           <div className="d-flex mb-2">
             <span className="me-2 text-sm font-weight-bold text-dark">
-              Demande d' absence refusé
+              Demande d'absence refusé
             </span>
             <span className="ms-auto text-sm font-weight-bold"> </span>
           </div>
@@ -357,7 +357,7 @@ function renderDeniedRequest() {
         <div className="w-100">
           <div className="d-flex mb-2">
             <span className="me-2 text-sm font-weight-bold text-dark">
-              Réitérez la demande d' absence
+              Réitérez la demande d'absence
             </span>
             <span className="ms-auto text-sm font-weight-bold"> </span>
           </div>
@@ -377,7 +377,7 @@ function renderNoRequest() {
         <div className="w-100">
           <div className="d-flex mb-2">
             <span className="me-2 text-sm font-weight-bold text-dark">
-              Aucune demande d' absence
+              Aucune demande d'absence
             </span>
             <span className="ms-auto text-sm font-weight-bold"> </span>
           </div>
@@ -390,7 +390,7 @@ function renderNoRequest() {
         <div className="w-100">
           <div className="d-flex mb-2">
             <span className="me-2 text-sm font-weight-bold text-dark">
-              Envoyez une demande d' absence
+              Envoyez une demande d'absence
             </span>
             <span className="ms-auto text-sm font-weight-bold"> </span>
           </div>

@@ -21,7 +21,7 @@ const JoursTravaillesChart = ({ url }) => {
       .then((data) => {
         const transformedData = data.data.map((item) => ({
           jour_semaine: item.jour_semaine, // Lundi, Mardi, etc.
-          moyenne_employes: item.moyenne_employes,
+          moyenne_etudiant: item.moyenne_employes,
         }));
         setJoursData(transformedData);
       })
@@ -60,7 +60,7 @@ const JoursTravaillesChart = ({ url }) => {
           />
           <YAxis
             label={{
-              value: "Moyenne employés",
+              value: "Moyenne d'étudiant",
               angle: -90,
               position: "insideLeft",
             }}
@@ -72,7 +72,7 @@ const JoursTravaillesChart = ({ url }) => {
             }}
           />
 
-          <Bar dataKey="moyenne_employes" isAnimationActive={false}>
+          <Bar dataKey="moyenne_etudiant" isAnimationActive={false}>
             {joursData.map((entry, index) => (
               <Cell
                 key={`cell-${index}`}
@@ -81,7 +81,7 @@ const JoursTravaillesChart = ({ url }) => {
             ))}
 
             <LabelList
-              dataKey="moyenne_employes"
+              dataKey="moyenne_etudiant"
               position="top"
               offset={10}
               style={{
