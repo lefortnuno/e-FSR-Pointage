@@ -16,8 +16,7 @@ import {
   BsCheckCircleFill,
   BsXCircleFill,
 } from "react-icons/bs";
-
-import html2pdf from "html2pdf.js";
+ 
 import "../pointage.css";
 import "./weeks.css";
 
@@ -110,8 +109,7 @@ export default function Weeks() {
 
   const [taux, setTaux] = useState([]);
 
-  const searchInputRef = useRef(null);
-  const ficheRef = useRef();
+  const searchInputRef = useRef(null); 
 
   useEffect(() => {
     getHisto();
@@ -216,7 +214,7 @@ export default function Weeks() {
         name="searchValue"
         placeholder="Rechercher ...."
         autoComplete="off"
-        className="form-control text-dark ps-1"
+        className="form-control text-dark"
         ref={searchInputRef}
         onChange={rechercheElement}
       />
@@ -255,23 +253,11 @@ export default function Weeks() {
     }
   }
   //#endregion
-
-  // Fonction pour générer le PDF
-  const generatePDF = () => {
-    const element = ficheRef.current;
-    const options = {
-      margin: 0.5,
-      filename: "fiche_de_presence.pdf",
-      image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
-    };
-    html2pdf().set(options).from(element).save();
-  };
+ 
 
   return (
     <Template customInput={customInput}>
-      <main className="col-md-12 ms-sm-auto col-lg-12 mt-2 main" ref={ficheRef}>
+      <main className="col-md-12 ms-sm-auto col-lg-12 mt-2 main">
         <div className="pt-3 pb-2 mb-3">
           {/* -------------------------- PAGE CONTENT -------------------------- */}
           <div className="text-center my-3 mt-0">
@@ -395,14 +381,7 @@ export default function Weeks() {
             />
           </div>
         </div>
-      </main>
-      {currentUsers.length > 0 && (
-        <div className="button-pdf">
-          <button className="btn btn-primary" onClick={generatePDF}>
-            Télécharger PDF
-          </button>
-        </div>
-      )}
+      </main> 
     </Template>
   );
 }
