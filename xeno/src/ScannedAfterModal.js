@@ -35,8 +35,8 @@ const ScannedAfterModal = ({
   const renderLabel = () => {
     if (motif || isFocus) {
       return (
-        <Text style={[styles.label, isFocus && { color: "#1d8758" }]}>
-          Motif de sortie
+        <Text style={[styles.label, isFocus && { color: "#124bbd" }]}>
+          Pointage de Sortie
         </Text>
       );
     }
@@ -146,7 +146,7 @@ const ScannedAfterModal = ({
                   maxHeight={300}
                   labelField="label"
                   valueField="motif"
-                  placeholder={!isFocus ? "Motif de Sortie" : "..."}
+                  placeholder={!isFocus ? "Pointage de Sortie" : "..."}
                   searchPlaceholder="Search..."
                   value={motif}
                   onFocus={() => setIsFocus(true)}
@@ -178,7 +178,7 @@ const ScannedAfterModal = ({
                 onClose();
               }}
               style={{
-                backgroundColor: "#1d8758",
+                backgroundColor: "#124bbd",
                 paddingVertical: 15,
                 borderRadius: 15,
                 paddingHorizontal: 40,

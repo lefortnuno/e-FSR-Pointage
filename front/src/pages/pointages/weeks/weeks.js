@@ -216,7 +216,7 @@ export default function Weeks() {
         name="searchValue"
         placeholder="Rechercher ...."
         autoComplete="off"
-        className="form-control text-dark"
+        className="form-control text-dark ps-1"
         ref={searchInputRef}
         onChange={rechercheElement}
       />
@@ -396,6 +396,13 @@ export default function Weeks() {
           </div>
         </div>
       </main>
+      {currentUsers.length > 0 && (
+        <div className="button-pdf">
+          <button className="btn btn-primary" onClick={generatePDF}>
+            Télécharger PDF
+          </button>
+        </div>
+      )}
     </Template>
   );
 }

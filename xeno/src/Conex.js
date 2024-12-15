@@ -84,7 +84,7 @@ export default function Conex({ navigation }) {
         >
           <ImageBackground
             style={{
-              height: height / 10.5,
+              height: height / 7.5,
               width: 250,
             }}
             resizeMode="contain"
@@ -93,29 +93,29 @@ export default function Conex({ navigation }) {
         </View>
         <View style={{ marginVertical: 50 }}>
           <TextInput
-            placeholder="Saisissez votre Identifiant"
+            placeholder="Identifiant ..."
             style={{
               fontSize: 20,
               padding: 15,
-              backgroundColor: "#d1edd9",
+              backgroundColor: "#d1e0f4",
               width: height / 2.5,
               marginHorizontal: "auto",
-              borderRadius: 10,
+              borderRadius:  7,
             }}
             value={userName}
             onChangeText={(text) => setUserName(text)}
           />
           <TextInput
-            placeholder="Mot de passe ****"
+            placeholder="Mot de Passe ****"
             secureTextEntry
             style={{
               marginTop: height / 20,
               fontSize: 20,
               padding: 15,
-              backgroundColor: "#d1edd9",
+              backgroundColor: "#d1e0f4",
               width: height / 2.5,
               marginHorizontal: "auto",
-              borderRadius: 10,
+              borderRadius:  7,
             }}
             value={userPassword}
             onChangeText={(text) => setUserPassword(text)}
@@ -125,7 +125,7 @@ export default function Conex({ navigation }) {
               style={{
                 alignSelf: "flex-end",
                 marginTop: 30,
-                color: "gray",
+                color: "#808080",
               }}
             >
               Mots de passe oublier ?
@@ -134,16 +134,16 @@ export default function Conex({ navigation }) {
           <TouchableOpacity
             onPress={connexion}
             style={{
-              backgroundColor: "#1d8758",
+              backgroundColor: "#124bbd",
               paddingVertical: 20,
-              borderRadius: 20,
+              borderRadius: 10,
               alignItems: "center",
               marginTop: 30,
             }}
           >
             <Text
               style={{
-                color: "white",
+                color: "#fff",
                 fontSize: 23,
               }}
             >

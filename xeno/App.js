@@ -17,7 +17,7 @@ export default function App() {
     colors: {
       ...DefaultTheme.colors,
       primary: "gray",
-      secondary: "yellow",
+      secondary: "red",
     },
   };
   return (
@@ -27,5 +27,4 @@ export default function App() {
       </PaperProvider>
     </>
   );
-}
-// adb reverse tcp:3002 tcp:3002
+} 

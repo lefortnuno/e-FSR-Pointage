@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
-import { BarCodeScanner } from "expo-barcode-scanner";
+import { Camera } from "expo-camera";
 import { useIsFocused } from "@react-navigation/native";
 import axios from "axios";
 import io from "socket.io-client";
 import ScannedAfterModal from "./ScannedAfterModal";
-// import { SUN_API_URL } from "@env";
 
 const QrcodeScane = () => {
   const API_STATIQUE = "https://collimation.onrender.com/api/";
@@ -15,6 +14,7 @@ const QrcodeScane = () => {
   const [isExiting, setIsExiting] = useState(false);
   const [employeeInfo, setEmployeeInfo] = useState(null);
   const [employeeIm, setEmployeeIm] = useState("");
+  const [cameraReady, setCameraReady] = useState(false);
   const isFocused = useIsFocused();
 
   const toggleModal = () => {
@@ -23,7 +23,7 @@ const QrcodeScane = () => {
 
   useEffect(() => {
     (async () => {
-      const { status } = await BarCodeScanner.requestPermissionsAsync();
+      const { status } = await Camera.requestCameraPermissionsAsync();
       setHasPermission(status === "granted");
       setScanned(false);
     })();
@@ -32,12 +32,10 @@ const QrcodeScane = () => {
   const handleBarCodeScanned = async ({ data }) => {
     setScanned(true);
     try {
-      // 1. Récupérer les informations de l'employé via l'ID scanné
       const employeeResponse = await axios.get(
         `${API_STATIQUE}utilisateur/${data}`
       );
       const employeeData = employeeResponse.data.data;
-      // console.log(employeeData)
 
       if (!employeeData) {
         alert(
@@ -50,7 +48,6 @@ const QrcodeScane = () => {
       setEmployeeInfo(employeeData);
       setEmployeeIm(data);
 
-      // Enregistrer l'entrée de l'employé
       const res = await axios.post(`${API_STATIQUE}pointage/`, {
         employeIm: data,
       });
@@ -63,13 +60,11 @@ const QrcodeScane = () => {
     }
   };
 
-  // Fonction pour notifier le serveur
   const notifyServer = () => {
     const socket = io(`${API_STATIQUE}`);
     socket.emit("actu", { qrData: "donneeSannee" });
   };
 
-  // Enregistrer une sortie
   const handleExit = async () => {
     try {
       await axios.put(`${API_STATIQUE}pointage/cloture`, {
@@ -92,10 +87,14 @@ const QrcodeScane = () => {
 
   return (
     <View style={styles.container}>
-      {isFocused && (
-        <BarCodeScanner
-          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+      {isFocused && hasPermission && (
+        <Camera
           style={{ height: 500, width: 400 }}
+          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+          onCameraReady={() => setCameraReady(true)}
+          barCodeScannerSettings={{
+            barCodeTypes: ["qr"],
+          }}
         />
       )}
       {scanned && (

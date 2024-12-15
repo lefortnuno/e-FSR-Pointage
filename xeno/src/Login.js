@@ -49,14 +49,14 @@ const Login = ({ navigation }) => {
             marginBottom: 0,
           }}
           resizeMode="contain"
-          source={require("./img/undraw_season_change_f99v.png")}
+          source={require("./img/pointage.png")}
         />
       </View>
       <View
         style={{
           width: "80%",
           marginTop: 0,
-          marginBottom: 22,
+          marginBottom: 50,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -84,7 +84,7 @@ const Login = ({ navigation }) => {
           <Text
             style={{
               fontSize: 30,
-              color: "#1d8758",
+              color: "#124bbd",
             }}
           >
             Pointage biometrique pour
@@ -92,7 +92,7 @@ const Login = ({ navigation }) => {
           <Text
             style={{
               fontSize: 30,
-              color: "#fcba03",
+              color: "red",
             }}
           >
             {" "}
@@ -101,7 +101,7 @@ const Login = ({ navigation }) => {
           <Text
             style={{
               fontSize: 30,
-              color: "#1d8758",
+              color: "#124bbd",
             }}
           >
             R
@@ -119,7 +119,7 @@ const Login = ({ navigation }) => {
         <Text
           style={{
             fontSize: 15,
-            color: "gray",
+            color: "#808080",
           }}
         >
           Faculté des Sciences de Rabat !
@@ -128,7 +128,7 @@ const Login = ({ navigation }) => {
       <View
         style={{
           paddingHorizontal: 50,
-          marginTop: 100,
+          marginTop: 70,
           paddingTop: 10,
           textAlign: "center",
           alignItems: "center",
@@ -137,9 +137,9 @@ const Login = ({ navigation }) => {
         <TouchableOpacity
           onPress={change}
           style={{
-            backgroundColor: "#1d8758",
+            backgroundColor: "#124bbd",
             paddingVertical: 20,
-            borderRadius: 20,
+            borderRadius: 10,
             paddingHorizontal: 60,
           }}
         >

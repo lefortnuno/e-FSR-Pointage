@@ -79,8 +79,8 @@ const Dashboard = () => {
           return (
             <>
               <Appbar.Header>
-                <Text style={{ fontSize: 30, color: "#fcba03" }}> FS</Text>
-                <Text style={{ fontSize: 30, color: "#1d8758" }}>R</Text>
+                <Text style={{ fontSize: 30, color: "#ff0000" }}>  FS</Text>
+                <Text style={{ fontSize: 30, color: "#124bbd" }}>R</Text>
                 <Appbar.Content title="" />
                 <TouchableOpacity
                   style={{
@@ -116,7 +116,7 @@ const Dashboard = () => {
                       marginRight: 30,
                       elevation: 5,
                       flexDirection: "row",
-                      borderRadius: 15,
+                      borderRadius: 10,
                     }}
                   >
                     <View style={{ justifyContent: "center" }}>
@@ -125,7 +125,7 @@ const Dashboard = () => {
                           fontSize: 15,
                           marginBottom: 10,
                           fontWeight: "bold",
-                          width: 130,
+                          width: 150,
                         }}
                       >
                         {item?.title}
@@ -137,7 +137,11 @@ const Dashboard = () => {
                             ? pointage.isaPresent
                             : pointage.isaAbsent
                         }
-                        style={{ backgroundColor: "#18a037", width: "100%" }}
+                        style={{
+                          backgroundColor: "#124bbd",
+                          borderRadius: 10,
+                          width: "100%",
+                        }}
                       />
                     </View>
                   </TouchableOpacity>
@@ -195,7 +199,13 @@ const Dashboard = () => {
                           source={{
                             uri: `${API_STATIQUE}${item.pic}`,
                           }}
-                          style={{ width: 35, height: 35, borderRadius: 25 }}
+                          style={{
+                            width: 35,
+                            height: 35,
+                            borderRadius: 25,
+                            borderWidth: 2,
+                            borderColor: "#000",
+                          }}
                         />
                       ) : (
                         <Avatar.Text size={50} label="?" />
