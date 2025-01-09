@@ -1,12 +1,10 @@
-import Template from "../../components/template/template"; 
-import Days from "./days/days";
- 
+import Template from "../../components/template/template";
+import Days from "./days/days"; 
 import "./stat.css";
 
 const url_req = process.env.REACT_APP_SUN_COMPLET_URL + `employee/`;
 
-export default function Pointage() { 
-
+export default function Pointage() {
   return (
     <Template>
       <main className="col-md-12 ms-sm-auto col-lg-12 px-md-4 main mt-2 pb-2">
@@ -22,8 +20,7 @@ export default function Pointage() {
             </div>
           </div>
 
-          <Days url={url_req + "statJour/"} />
-
+          <Days url={url_req + "statJour/"} /> 
           {/* -------------------------- FIN -------------------------- */}
         </div>
       </main>
